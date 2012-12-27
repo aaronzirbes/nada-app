@@ -1,0 +1,24 @@
+<% layout('mainLayout') -%>
+<div id="main" class="home">
+    <% if (message) { %><%= message %><% } %>
+    <% if (user) { %>
+    <h1><%= user.name.full %></h1>
+    <% } else { %>
+    <h1>Not logged in</h1>
+    <form action="/auth/login" method="post">
+        <fieldset>
+            <legend>Legend</legend>
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Type something…">
+            <span class="help-block">Example block-level help text here.</span>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="">
+            <span class="help-block">Example block-level help text here.</span>
+            <button type="submit" class="btn">Submit</button>
+        </fieldset>
+    </form>
+    <% } %>
+    <a href="/" class="roll-link"><span data-title="Test">Test</span></a>
+</div>
+
+
