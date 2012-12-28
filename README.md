@@ -1,4 +1,6 @@
 nada-app
 ========
 
-An app about nothing
+An app about nothing.
+
+(Work in progress...)
